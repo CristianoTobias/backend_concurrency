@@ -21,23 +21,17 @@ Siga os passos abaixo para executar o projeto localmente:
     python -m venv env
     source env/Scripts/activate  # Para usuários do Windows
     ```
-
-4. Instale as dependências do projeto:
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-5. Certifique-se de ter o Uvicorn instalado. Se não estiver instalado, você pode instalá-lo com o seguinte comando:
+4. Certifique-se de ter o Uvicorn instalado. Se não estiver instalado, você pode instalá-lo com o seguinte comando:
     ```bash
     pip install uvicorn
     ```
 
-6. Inicie o servidor Uvicorn para executar a aplicação Django:
+5. Inicie o servidor Uvicorn para executar a aplicação Django:
     ```bash
     uvicorn --reload asyncviews.asgi:application
     ```
 
-7. Uma vez que o servidor esteja em execução, você poderá acessar os seguintes endpoints:
+6. Uma vez que o servidor esteja em execução, você poderá acessar os seguintes endpoints:
     - [http://localhost:8000/api/](http://localhost:8000/api/): Aguarda 5 segundos antes de retornar uma resposta JSON com a mensagem "Hello World".
     - [http://localhost:8000/sync/](http://localhost:8000/sync/): Executa um loop com espera síncrona por 10 segundos e, em seguida, retorna "Blocking HTTP request".
     - [http://localhost:8000/async/](http://localhost:8000/async/): Executa uma função assíncrona que aguarda 5 segundos e, em seguida, retorna "Non-blocking HTTP request".
