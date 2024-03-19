@@ -8,12 +8,12 @@ Siga os passos abaixo para executar o projeto localmente:
 
 1. Clone o repositório do GitHub para o seu ambiente local:
     ```bash
-    git clone https://github.com/seu_usuario/backend_cuncurrency.git
+    git clone https://github.com/seu_usuario/backend_concurrency.git
     ```
 
 2. Navegue até o diretório do projeto:
     ```bash
-    cd backend_cuncurrency
+    cd backend_concurrency
     ```
 
 3. Crie e ative um ambiente virtual:
